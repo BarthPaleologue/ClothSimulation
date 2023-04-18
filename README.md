@@ -1,5 +1,6 @@
 # Coth Simulation
 
+[![pages-build-deployment](https://github.com/BarthPaleologue/ClothSimulation/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BarthPaleologue/ClothSimulation/actions/workflows/pages/pages-build-deployment)
 [![NodeJS with Webpack](https://github.com/BarthPaleologue/babylonjs-template/actions/workflows/webpack.yml/badge.svg)](https://github.com/BarthPaleologue/babylonjs-template/actions/workflows/webpack.yml)
 [![CodeQL](https://github.com/BarthPaleologue/ClothSimulation/actions/workflows/codeql.yml/badge.svg)](https://github.com/BarthPaleologue/ClothSimulation/actions/workflows/codeql.yml)
 
