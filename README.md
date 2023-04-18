@@ -6,6 +6,8 @@
 
 A simple simulation of cloth based on [OpenCloth](https://github.com/BarthPaleologue/opencloth) and [BabylonJS](https://www.babylonjs.com/).
 
+Deployment available here: https://barthpaleologue.github.io/ClothSimulation/dist
+
 ![Screenshot](./cover/cover2.png)
 ![Screenshot](./cover/cover1.png)
 
