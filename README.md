@@ -1,6 +1,7 @@
 # Coth Simulation
 
 [![NodeJS with Webpack](https://github.com/BarthPaleologue/babylonjs-template/actions/workflows/webpack.yml/badge.svg)](https://github.com/BarthPaleologue/babylonjs-template/actions/workflows/webpack.yml)
+[![CodeQL](https://github.com/BarthPaleologue/ClothSimulation/actions/workflows/codeql.yml/badge.svg)](https://github.com/BarthPaleologue/ClothSimulation/actions/workflows/codeql.yml)
 
 A simple simulation of cloth based on [OpenCloth](https://github.com/BarthPaleologue/opencloth) and [BabylonJS](https://www.babylonjs.com/).
 
