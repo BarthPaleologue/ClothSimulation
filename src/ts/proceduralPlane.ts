@@ -4,6 +4,7 @@ export function createProceduralPlaneData(nbSubdivisions: number, size: number):
     const positions = new Float32Array(nbSubdivisions * nbSubdivisions * 3);
     const indices = new Uint32Array((nbSubdivisions - 1) * (nbSubdivisions - 1) * 3 * 2);
     const uvs = new Float32Array(nbSubdivisions * nbSubdivisions * 2);
+    const normals = new Float32Array(nbSubdivisions * nbSubdivisions * 3);
 
     for (let x = 0; x < nbSubdivisions; x++) {
         const xPosition = (x / nbSubdivisions) * size - size / 2;
@@ -17,6 +18,11 @@ export function createProceduralPlaneData(nbSubdivisions: number, size: number):
             positions[positionIndex] = xPosition;
             positions[positionIndex + 1] = 0;
             positions[positionIndex + 2] = zPosition;
+
+            const normalIndex = 3 * (x * nbSubdivisions + z);
+            normals[normalIndex] = 0;
+            normals[normalIndex + 1] = 1;
+            normals[normalIndex + 2] = 0;
 
             const uvIndex = 2 * (x * nbSubdivisions + z);
             uvs[uvIndex] = xUV;
@@ -39,6 +45,7 @@ export function createProceduralPlaneData(nbSubdivisions: number, size: number):
     vertexData.positions = positions;
     vertexData.indices = indices;
     vertexData.uvs = uvs;
+    vertexData.normals = normals;
 
     return vertexData;
 }

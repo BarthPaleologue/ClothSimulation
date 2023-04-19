@@ -11,6 +11,12 @@ export function drawLine(pointA: Vector3, pointB: Vector3, color: Color3, scene:
     return line;
 }
 
+export function drawEmptyLine(color: Color3, scene: Scene) {
+    const line = MeshBuilder.CreateLines("line", { points: [Vector3.Zero(), Vector3.Zero()] }, scene);
+    line.color = color;
+    return line;
+}
+
 export function updateLine(line: LinesMesh, pointA: Vector3, pointB: Vector3) {
     line.setVerticesData("position", [pointA.x, pointA.y, pointA.z, pointB.x, pointB.y, pointB.z]);
 }

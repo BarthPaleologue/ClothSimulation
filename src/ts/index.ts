@@ -12,13 +12,13 @@ import { Tools } from "@babylonjs/core/Misc/tools";
 
 import "../styles/index.scss";
 
-import { Carpet } from "./carpet";
 import { MeshBuilder } from "@babylonjs/core/Meshes/meshBuilder";
 
 import { PBRMaterial } from "@babylonjs/core/Materials/PBR/pbrMaterial";
 import { DirectionalLight } from "@babylonjs/core/Lights/directionalLight";
 import { ShadowGenerator } from "@babylonjs/core/Lights/Shadows/shadowGenerator";
 import { Color3 } from "@babylonjs/core/Maths/math.color";
+import { Carpet } from "./carpet";
 
 const canvas = document.getElementById("renderer") as HTMLCanvasElement;
 canvas.width = window.innerWidth;
